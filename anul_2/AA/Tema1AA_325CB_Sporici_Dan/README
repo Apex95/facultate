@@ -1,0 +1,43 @@
+// 100p+
+
+1) Implementare Masina Turing
+
+Folosesc o structura numita 'Celula' ce contine cele 3 date de intrare
+aflate pe fiecare dintre cele s-sf linii din fisierul de intrare.
+
+Dupa citire, iau al 2-lea caracter din banda (primul fiind #) si il
+trec prin procedura 'interpreteaza_input'. Aceasta asociaza caracterul
+un indice (0, 1, 2 pt '0', '1', '#') pentru a adresa Celula potrivita
+din matricea de tranzitie (linia curenta fiind data de starea in care
+se afla masina Turing iar coloana de caracterul citit). Se actualizeaza
+starea, banda si se efectueaza deplasarea (daca e nevoie).
+
+La final se afiseaza rezultatul.
+
+
+2) Completare matrice de tranzitie
+
+Algoritmul: iau primul caracter (0 sau 1) din primul cuvant si il compar 
+cu primul caracter din cek de-al 2-lea cuvant(in locul celor 2 cifre trec #). 
+Daca difera => curat banda si afisez rezultatul; daca nu, intorc 
+cursorul pana la primul '#' si continui la fel cu cel de-al 2-lea 
+caracter de la fiecare cuvant. Si tot asa...
+
+La fiecare rulare verific daca bitul celui de-al 2-lea cuvant este ultimul
+(adica daca e urmat de un #) - daca se intampla asta, cuvintele sunt egale
+deci curat banda si afisez 1.
+
+Pentru curatarea benzii: la final pot aparea 2 cazuri, ce sunt tratate
+separat:
+
+c1) cele 2 cuvinte difera doar prin ultimul caracter: caz in care stiu ca 
+nu mai este nevoie curatarea benzii in zona in care e trecut primul cuvant.
+Prin urmare, ramane sa trec rezultatul in locul caracterului ramas.
+
+c2) cuvintele difera si printr-un alt caracter (nu doar ultimul): daca se 
+intampla asta, deja se poate stabili cuvantul "mai mare" deci raman
+pe banda cateva caractere de la primul cuvant si cateva de la al 2-lea.
+Asta implica o parcurgere in ambele sensuri a benzii iar rezultatul este
+scris peste caracterul ramas aflat cat mai in stanga. 
+
+ 

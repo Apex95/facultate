@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>La casa di Dan</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body onLoad="updateLocation()">
+<div id="room-wrapper">
+    <div id="room-background">
+
+        
+        
+        <div id="light-switch" onClick="switchLights()"></div>
+        <div class="light-source" id="ls1"></div>
+        <div class="light-source" id="ls2"></div>
+        
+        
+        <a class="tv-nav" id="tv-nav-prev" href="javascript:setPrevChannel()">&laquo;</a>
+        <a class="tv-nav" id="tv-nav-next" href="javascript:setNextChannel()">&raquo;</a>
+        
+        <div id="tvchannel0" class="tv-screen">
+            <span style="font-size: 0.9vw; position: absolute;"><br><span id="regionName">&lt;region&gt;</span>:<br>
+            <span id="weatherInfo">&lt;weather_info&gt;</span>
+            </span>
+            
+        </div>
+        
+        <div id="tvchannel1" class="tv-screen">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/iahhYHy7lDo?rel=0&amp;controls=0&amp;showinfo=0&amp;start=34" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div id="tvchannel2" class="tv-screen">
+        </div>
+        
+        <div id="aq-info" onClick = "getAQCoefficient()">
+        Air Quality in... <br><span id="aqValue">&lt;value&gt;</span>
+        </div>
+        
+        <div id="ip-info">
+            Current IP:
+            <span id="ip-address">&lt;ip-addr&gt;</span>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+
+</html>

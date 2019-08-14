@@ -1,0 +1,23 @@
+# toate swich-urile
+NET a<0> LOC = "N15";
+NET a<1> LOC = "J16";
+NET a<2> LOC = "K16";
+NET b<0> LOC = "K15";
+NET b<1> LOC = "L15";
+NET b<2> LOC = "M16";
+
+
+#leduri
+NET c<0> LOC = "L14";
+NET c<1> LOC = "L13";
+NET c<2> LOC = "M14";
+NET c<3> LOC = "L12";
+NET c<4> LOC = "N14";
+NET c<5> LOC = "M13";
+NET c<6> LOC = "P14";
+NET c<7> LOC = "R16";
+
+#operatie
+NET op<2> LOC = "J13";
+NET op<0> LOC = "M15";
+NET op<1> LOC = "N16";

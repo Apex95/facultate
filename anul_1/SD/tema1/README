@@ -1,0 +1,75 @@
+// 100p
+
+Dan Sporici
+
+== Readme ==
+
+    Tabelul de dispersie este implementat folosind un vector alocat pe heap
+ce are ca elemente pointeri catre o structura Tbucket - pe baza acestei
+structuri sunt construite listele generice (buckets-urile) de la fiecare indice.
+    
+    Fiecare structura contine un (void) pointer catre o alta structura numita
+TbucketCell, in care sunt retinute informatiile de forma (key, value). 
+Accesul la date se face utilizand functiile ajutatoare 'keyOf' si 'valueOf',
+astfel incat functiile principale sa nu depinda 'direct' de tipul structurii
+in care sunt retinute informatiile.
+    
+    Fisierul de intrare este citit linie cu linie, iar la fiecare citire
+este facuta impartirea cu strtok, dupa spatii si rezulta 3 variabile: una
+ce retine numele comenzii iar celelalte 2 argumentele transmise. In functie de
+nume se stabileste ce functie e apelata in program si in ce mod.
+
+
+== Functii ==
+
+    execComand() - 'parseaza' comanda data la input si apeleaza echivalentul
+                    ei in program
+
+    computeHash() - returneaza hashul corespunzator unei chei
+                    (suma mod dimensiune_tabel)
+
+    createTable() - aloca memorie pe heap pentru tabelul de hash si returneaza
+                    un pointer catre adresa alocata
+
+    addToTable() - adauga elementul in bucketul indicat de computeHash()
+                 - daca nu se poate adauga returneaza 0, altfel returneaza 1
+
+    findKey() - intoarce 1/0 daca o cheie exista sau nu si scrie in fisier
+                rezultatul
+                * se bazeaza pe getValue()
+
+    getValue() - intoarce valoarea (value) corespunzatoare unei chei (key)
+                 si o scrie in fisierul de iesire daca este nevoie.
+               - deoarece rezultatul de la findKey() depinde de aceasta
+                 functie, scrierea rezultatului in fisier este conditionata
+                 de un parametru numit 'suppress'
+
+    removeFromTable() - sterge celula din bucket care contine cheia data
+                      - returneaza 1 daca s-a efectuat stergerea altfel 0
+
+    disposeElement() - elibereaza memoria alocata de o structura (Tbucket) 
+                       aflata in compozitia unui bucket.
+    
+    disposeAll() - elibereaza memoria folosita de tot tabelul de dispersie
+
+    dumpTable() - afiseaza continutul din fiecare bucket sau doar dintr-un
+                  bucket specificat prin pozitia sa in tabel
+                - pentru index == -1, afiseaza tot continutul tabelului,
+                  iar pentru index != -1, afiseaza doar continutul bucketului
+                  aflat pe indicele dat.
+
+---
+    createInfoCell() - aloca memorie pentru o celula (TbucketCell) 
+                       ce retine informatiile (key, value) si seteaza 
+                       valorile date ca parametri.
+
+    keyOf() - returneaza cheia retinuta intr-un element dintr-un bucket
+    valueOf() - returneaza valoarea retinuta de elementul din bucket
+
+
+
+
+
+    
+
+

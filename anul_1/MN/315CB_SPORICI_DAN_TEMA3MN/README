@@ -1,0 +1,105 @@
+// 100p + 25p
+
+Problema 1:
+
+        Initial se alege o matrice 'p' patratica de dimensiune n (= nr de elem.
+    din X). Valorile din vectorul Y se trec pe diagonala principala
+    a acestei matrice, iar mai apoi se calculeaza valorile polinoamelor (in x0)
+    folosind relatia de recurenta (algoritmul lui neville):
+
+    p(j, k) = ((x0-x(j, k-1))*p(j, k-1) - (x0-x(j))*p(j+1, k)) / (x(j)-x(k)) 
+
+    -unde k = i+j, iar i=1:n, j=1:n-i.
+
+        
+        La final, este returnata valoarea p(0,n) - rezultatul pt x0.
+
+
+Problema 2:
+
+        Formula pt a calcula rezultatul in x0:
+        
+    y0 = y(x1) + (y(x2) - y(x1)) / (x2 - x1) * (x0 - x1);
+
+    -in conditiile in care x1  < x0 < x2.
+
+        Prin urmare, problema consta in incadrarea lui x0 intre 2 valori
+    din vectorul X dat initial si determinarea lui y0 folosind acele valori.
+
+        In cazul in care x0 == x1 == x2 (adica se cere calculul unui y0 deja
+    existent in vectorul Y), pentru x2 se alege cel mai mic numar din vector
+    mai mare decat acesta - vectorul fiind sortat, se ia urmatorul numar.
+
+        Daca x1 sau x2 se afla intr-un capat al vectorului X, calculul se face 
+    folosind cealalta extremitate (se iau punctele din capete).
+
+
+Problema 3:
+
+        Ideea principala este de a scrie sistemul de ecuatii in forma
+    matriceala A*coef=rez unde 'coef' contine coeficientii 
+    (a0, b0, c0, d0, a1, b1...)'; 'rez' contine rezultatele ecuatiilor iar 'A' 
+    valorile pt (x-xi)^p. 
+    
+        -conditiile de racord se scriu sub forma unor ecuatii egale cu 0
+        si se adauga in aceeasi matrice A.
+
+        De ex, pentru 2 splineuri:
+        
+    s[0](x) = a0*(x-xi)^3 + b0*(x-xi)^2 + c0*(x-xi) + d0
+    s[1](x) = a1*(x-xi)^3 + b1*(x-xi)^2 + c1*(x-xi) + d1
+
+        si x=[0 1 2] iar y=[1 3 6]
+
+    
+    A = [ 0 0 0 1 0  0  0 0
+          1 1 1 1 0  0  0 0
+          0 0 0 0 0  0  0 1    (conditii de interpolare)
+          0 0 0 0 1  1  1 1
+          -----------------
+          3 2 1 0 0  0 -1 0    (conditii de racord)
+          6 2 0 0 0 -2  0 0
+          -----------------
+          0 2 0 0 0  0  0 0    (conditii pt splineuri naturale)
+          0 0 0 0 6  2  0 0 ] 
+
+    coef = [ a0
+             b0
+             c0
+             d0
+             a1
+             b1
+             c1
+             d1 ]
+
+    rez = [ 1
+            3
+            3
+            6
+           ---
+            0
+            0
+           ---
+            0
+            0 ]
+
+
+        Coeficientii se obtin prin rezolvarea sistemului (A\rez) iar 
+    evaluarea in punctul x0 se efectueaza luand un vector de forma
+        [ (x0-x(i))^3 (x0-x(i))^2 (x0-x(i)) 1 ] 
+
+    unde x(i) (din X) are cea mai mare valoare mai mica decat x0.
+    
+        Stiind coeficientul (i) => se va folosi splineul 'i'.
+        Asupra vectorului obtinut se aplica un 'padding' astfel incat
+    sa ajunga la dimensiunea vectorului de coeficienti si sa se 
+    multiplice cu coeficientii splineului i; rezultatul obtinut va fi y0.
+
+
+Problema Bonus:
+
+        Aproape la fel ca la problema anterioara, doar ca difera
+    ultimele 2 linii din matricea A si implicit din vectorul de coeficienti
+    (se inlocuiesc relatiile pt spline-uri c2 naturale cu cele pt splineuri 
+    tensionate).
+    

@@ -1,0 +1,25 @@
+// 100p
+
+Dan Sporici
+
+Mod de implementare:
+
+Incep cu citirea parametrilor din linia de comanda iar cand ajung la fisierele de intrare, 
+pt fiecare fisier creez cate un EventGenerator (derivat din Thread) catre care trimit numele 
+fisierului, coada cu evenimente, un atomic int (finishedGenerators) care va fi incrementat de 
+fiecare generator in parte cand isi termina executia si nr. de evenimente din fiecare fisier. 
+
+Pe urma, in threadul principal verific daca toti generatorii au terminat de adaugat eventuri 
+(daca valoarea din acel atomic integer e egala cu numarul de fisiere) sau daca exista eventuri 
+in coada. Cat timp una din conditii e satisfacuta, incerc sa extrag eventuri si sa le trimit 
+catre executor.
+
+Atunci cand un Event este creat, acesta va contine si o referinta catre una din cele 4 liste 
+de output pe care le face un EventGenerator (de ex. 3 event-uri de 'square' vor adauga rezultatele 
+in aceeasi lista de output daca provin de la acelasi generator). 
+
+Un Event executa operatii in functie de tipul sau iar in momentul in care obtine un rezultat, 
+face lock pe lista de output si adauga in aceasta valoarea calculata.
+
+La final, in threadul principal extrag de la fiecare generator listele de output le concatenez, 
+sortez si scriu in fisiere.

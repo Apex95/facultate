@@ -1,0 +1,6 @@
+verilog work "round.v"
+verilog work "keyshifterinv.v"
+verilog work "keyshifter.v"
+verilog work "main.v"
+verilog work "test_main.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

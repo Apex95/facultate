@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/alexm/Desktop/pipeMult/testPipe_isim_beh.exe" -prj "/home/alexm/Desktop/pipeMult/testPipe_beh.prj" "work.testPipe" "work.glbl" 

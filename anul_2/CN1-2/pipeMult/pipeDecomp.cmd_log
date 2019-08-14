@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/alexm/Desktop/pipeMult/pipeDecomp.xst" -ofn "/home/alexm/Desktop/pipeMult/pipeDecomp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 pipeDecomp.ngc pipeDecomp.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o pipeDecomp_map.ncd pipeDecomp.ngd pipeDecomp.pcf 
+par -w -intstyle ise -ol high -t 1 pipeDecomp_map.ncd pipeDecomp.ncd pipeDecomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml pipeDecomp.twx pipeDecomp.ncd -o pipeDecomp.twr pipeDecomp.pcf 
+bitgen -intstyle ise -f pipeDecomp.ut pipeDecomp.ncd 
+xst -intstyle ise -ifn "/home/alexm/Desktop/pipeMult/pipeDecomp.xst" -ofn "/home/alexm/Desktop/pipeMult/pipeDecomp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 pipeDecomp.ngc pipeDecomp.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o pipeDecomp_map.ncd pipeDecomp.ngd pipeDecomp.pcf 
+par -w -intstyle ise -ol high -t 1 pipeDecomp_map.ncd pipeDecomp.ncd pipeDecomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml pipeDecomp.twx pipeDecomp.ncd -o pipeDecomp.twr pipeDecomp.pcf 
+bitgen -intstyle ise -f pipeDecomp.ut pipeDecomp.ncd 

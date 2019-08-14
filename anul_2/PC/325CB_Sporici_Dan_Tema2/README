@@ -1,0 +1,54 @@
+// 100p
+
+== Detalii de implementare ==
+
+1. Inainte de conexiune
+	
+	Serverul citeste fisierul ce contine conturile (utilizator + parola) existente si pt.
+fiecare cont, creeaza folderele specifice si totodata o structura (accountsTable) cu aceste conturi (AccountRow). In momentul in care se cauta fisiere pt fiecare utilizator este creata alta lista (filesTable) ce contine numele fisierului, contul de care apartine, nivelul de acces (shared / private), o variabila booleana ce mentioneaza existenta acestuia (sters => FALSE / prezent => TRUE, ca sa nu fie nevoie sa fac prea multe operatii cu vectorul respectiv) si la final dimensiunea.
+	Clientul nu face nimic.
+
+2. Conexiunea
+	
+	Fiecare client conectat la server este adaugat intr-o lista (usersTable) ce contine socketul, daca este in continuare conectat sau nu, indici pentru pozitia la care a ramas clientul cu citirea listei de utilizatori / fisiere + 1 indice pentru fisierul curent pe care-l descarca clientul, un pointer la o lista de fisiere cerute pt download si un pointer catre contul corespunzator. 
+	Diferenta dintre mesaj
+
+3. Login 
+	Cand un client face o cerere de autentificare, se compara datele introduse cu cele din accountsTable (citite din fisier) si daca acestea corespund, se cauta elementul corespunzator clientului (dupa id-ul socketului) in usersTable si se adauga un pointer catre cont (AccountRow*). Daca exista 3 utilizatori conectati pe acelasi cont, toti vor avea acelasi pointer.
+
+4. Logout
+	Se cauta clientul respectiv dupa socket si se inlocuieste pointerul catre cont cu NULL.
+
+5. Getuserlist
+	Serverul aloca spatiu pt o structura UsersListMessage ce va contine un vector cu USERS_PER_MSG stringuri (nume de utilizatori); in cazul in care lista e mare (sunt mai multi utilizatori), se trimit in urmatorarele mesaje. Pentru a memora ce nume s-au trimis din accountsTable, fiecare utilizator are un indice (uChunk) care se actualizeaza ulterior. Structura obtinuta mai contine si o variabila booleana (lastMsg) care indica daca acest mesaj este ultimul din setul ce compune lista ceruta, caz in care clientul stie sa se opreasca din asteptat.
+
+6. Getfilelist
+	Similar cu Getuserlist, doar ca structura nu va mai contine un vector de stringuri ci un vector de structuri FileInfo cu field-urile (name, size, access).
+Se trimit tot cate FILES_PER_MSG fisiere in mesajul respectiv, asta implicand mai multe mesaje, daca este necesesar.
+
+7. Upload
+	Programul client contine o lista cu fisierele ce trebuie uploadate si un indice (pt fisierul curent). Cand e intalnita comanda upload, fisierul e adaugat in lista respectiva (enqueueForUpload()). De acolo este preluat de getUploadChunk() si trimis, atunci cand nu sunt date de citit de la stdin sau de la server. Atunci cand fisierul a fost trimis in intregime (nu mai exista chunk-uri pt citit), se modifica reqUpload = 0 si se cauta un alt fisier in lista (modificand indicele). La server, un fisier se considera scris cand s-a primit un mesaj cu campul lastMsg setat pe True. Serverul nu face decat sa preia mesajele si sa scrie continutul lor in fisierul cerut. Fisierul e adaugat in filesTable la final (cand este completat integral).
+
+8. Download
+	Sistemul de upload, adaptat pt mai multi clienti; de data asta, serverul tine cate o lista de fisiere pt download (download = upload de la server la client) si un set de indici, pt fiecare client. La parcurgere, daca un socket client nu a trimis date, verific lista de fisiere pe care acesta doreste sa le descarce. Daca gasesc un fisier netrimis, actualizez indicele care arata fisierul curent de trimis si extrag un chunk pe care-l trimit catre client.
+
+9. Delete
+	Sterg fisierul daca nu se afla in lista de download a unui client (poate sa fie in lista, dar sa aiba reqDownload = 0 - adica sa fi fost deja trimis).
+
+10. Share
+	Cauta un fisier in filesTable fisierul respectiv si schimba atributul access pe ACCESS_PUBLIC (daca nu era deja setat, daca fisierul exista, etc.). Nu functioneaza pt fisierele aflate in curs de upload, acestea fiind adaugate in filesTable abia la finalul incarcarii (cand sunt complete).
+
+11. Unshare
+	La fel ca share, doar ca tipurile de acces sunt inversate. 
+
+12/13. Quit
+	To be continued...
+
+
+Am considerat ca toate comenzile primite sunt corecte (scrise fara greseli, cu numarul corect de parametri...altfel se dereferentiaza niste NULL-uri pe acolo).
+
+O mica problema: formatul log-ului nu este exact cel din exemple.
+
+
+Sporici Dan / 325CB
+

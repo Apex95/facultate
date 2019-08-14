@@ -1,0 +1,37 @@
+// 100p
+
+Detalii de implementare:
+
+Toata tema se bazeaza pe o lista circulara de threaduri sortate descrescator
+dupa prioritate iar mai apoi dupa momentul cand au fost adaugate (crescator).
+
+
+Atunci cand se apeleaza so_fork() se retin datele despre threadul nou
+(semaforul folosit pt blocare, nr de cuante ramase, prioritatea, etc.) 
+intr-o structura "so_thread_t" care mai apoi va fi adaugata in lista
+anterior mentionata. Crearea efectiva a threadului (pthread_create)
+este urmata de un sem_wait() astfel incat so_fork sa nu execute return
+inainte. Cu sched_yield() incerc sa ma asigur ca sem_post() se va executa
+dupa sem_wait() din threadul principal (considerand ca se ruleaza pe sistem
+uniprocesor, conform enuntului). 
+Threadul nou creat, dupa ce va debloca threadul "parinte", se va
+bloca si va astepta semnal de la schedule_next().
+
+schedule_next() are rolul de a alege urmatorul thread pt procesare dupa
+criteriul de round robin si de a bloca threadul precedent, daca acesta
+nu s-a terminat deja - threadul ales este deblocat pe urma apeland sem_post().
+
+Fiecare "comanda" executata de un thread creat (so_exec/so_fork/so_signal/so_wait)
+implica un apel catre update_scheduler() care verifica daca threadul
+se poate preempta (fie a trecut in waiting, fie nu mai are cuante, caz in care
+se apeleaza iar schedule_next()).
+
+
+La final, in so_end() astept cu un join() ca toate threadurile sa termine executia.
+
+// sursa mi se pare destul de straightforward asa ca n-am mai adaugat comentarii 
+de data asta.
+
+
+
+

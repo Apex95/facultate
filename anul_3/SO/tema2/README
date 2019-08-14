@@ -1,0 +1,75 @@
+// 100p
+
+-- Readme --
+
+
+
+Executia comenzilor interne:
+
+- destul de straightforward, cd cu chdir() iar pentru exit returnez SHELL_EXIT
+
+
+
+Executia comenzilor externe:
+
+- creez o copie a procesului actual cu fork si efectuez duplicarea 
+descriptorilor cu dup2 avand grija ca stdout si stderr sa aiba
+acelasi descriptor in cazul in care sunt redirectate catre acelasi
+fisier.
+
+- determin nr de argumente (s->params) si construiesc un array de
+char * care sa aiba ca prim element numele procesului iar ca ultim
+element NULL (aka lista de argumente din execvp)
+
+- in cazul in care executabilul nu exista, se executa codul de dupa execvp()
+care afiseaza eroarea.
+
+
+
+Executia in paralel:
+
+Creez 2 procese fiu, in fiecare rulez cate o comanda separat si in parinte
+astept ca ambele sa termine.
+
+
+
+Executia in pipe:
+
+Creez un pipe si un proces fiu - fac legatura astfel incat stdout de la fiu
+sa duca catre stdin al parintelui. Execut prima comanda in procesul fiu si 
+imediat dupa comanda din procesul parinte.
+
+// pare sa fie necesara restaurarea descriptorului original in cazul
+parintelui, altfel se citeste un NULL din pipe si se inchide shellul
+
+
+Variabilele de mediu:
+
+cu getenv() si setenv()
+
+
+Detalii aditionale:
+
+constructPath() - construieste calea catre un fisier concatenand mai
+multe parti dintr-un word (facand si inlocuirea valorilor din variabilele
+de mediu)
+
+CHECK_ARGS_ALLOC() - face verificarea daca a esuat sau nu alocarea
+si elibereaza memoria folosita de array-ul de argumente (daca e nevoie)
+
+* scris sub forma de macro ca sa nu ajung la prea multe indentari si sa inceapa
+checkpatch cu warninguri...
+
+
+
+Sporici Dan / 335CB
+
+
+
+
+
+ 
+
+
+
+

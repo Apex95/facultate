@@ -1,0 +1,47 @@
+// 100p
+
+Dan Sporici
+
+== Detalii generale ==
+
+Tema are la baza un vector de n stive (n = nr de eventuri) si
+o coada de prioritati, cu functiile:
+
+sPUSH() & sPOP()   = push si pop pt stiva (stack.c)
+qINSERT() & qPOP() = inserare ordonata in coada si extragerea primului element
+                     (cu prioritate maxima) (queue.c)
+
+Functiile necesita un minim de informatii despre structura procesului
+si nu depind direct de aceasta - in schimb depind de niste functii
+din process.c (getProcSize, cmpOrdProc, etc) care ofera detaliile necesare.
+ 
+
+Datele de intrare se citesc linie cu linie, fiecare linie este impartita
+in 2 (sau 3) stringuri de forma: [comanda] [arg1] [arg2]. In functie
+de comanda, se efectueaza actiunile cerute, iar dupa fiecare actiune
+se afiseaza continutul stivelor si al cozii (showStack() si showQueue()).
+
+
+== Implementarea functiilor ==
+
+   start     - se parseaza linia data si se face qINSERT (inserare ord.) 
+               in coada de prioritati.
+
+   wait      - extrage toate procesele din coada (de la cel mai important)
+               si le muta intr-o coada auxiliara pana cand este intalnit 
+               procesul cu pId-ul cerut; cand acesta este gasit, este
+               adaugat in stiva corespunzatoare eventului (stacks[E]) iar
+               procesele copiate in coada auxiliara sunt mutate inapoi
+               in coada de prioritati.
+
+   event     - extrage din stacks[E] (stiva coresp. eventului E) toate 
+               procesele si le insereaza ordonat in coada de prioritati
+
+   end       - la fel ca la wait, dar fara sa mai adauge procesul intr-o
+               stiva de event-uri: muta tot pana la procesul cautat
+               intr-o coada auxiliara (mai putin procesul cerut), apoi
+               muta totul inapoi.
+
+
+
+

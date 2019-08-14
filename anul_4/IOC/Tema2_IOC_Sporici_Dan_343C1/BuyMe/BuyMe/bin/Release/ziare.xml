@@ -1,0 +1,1232 @@
+<cifre-difuzare>
+   <descriere>
+      <perioada>Aprilie - Iunie 2017</perioada>
+   </descriere>
+   <publicatii>
+      <publicatie>
+         <nume>Adevarul</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Cotidian generalist national</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>12036</tiraj_brut>
+            <total_vanzari>7306</total_vanzari>
+            <total_difuzat>7594</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Agenda</nume>
+         <editor>Russmedia Newspaper</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>6546</tiraj_brut>
+            <total_vanzari>4789</total_vanzari>
+            <total_difuzat>4824</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Auto Motor si Sport</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Auto - moto</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>9500</tiraj_brut>
+            <total_vanzari>4496</total_vanzari>
+            <total_difuzat>4804</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Autobild</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Auto - moto</categorie>
+         <periodicitate>Bilunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>9750</tiraj_brut>
+            <total_vanzari>5053</total_vanzari>
+            <total_difuzat>5226</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Avantaje</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>14833</tiraj_brut>
+            <total_vanzari>5631</total_vanzari>
+            <total_difuzat>6099</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Beau Monde</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>6 aparitii pe an</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>5500</tiraj_brut>
+            <total_vanzari>1804</total_vanzari>
+            <total_difuzat>2225</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Bihari Naplo</nume>
+         <editor>Russmedia Newspaper</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>9986</tiraj_brut>
+            <total_vanzari>9454</total_vanzari>
+            <total_difuzat>9806</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Bihoreanul</nume>
+         <editor>Bihor Media</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>4000</tiraj_brut>
+            <total_vanzari>2574</total_vanzari>
+            <total_difuzat>2851</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Business Adviser</nume>
+         <editor>Apulum 94</editor>
+         <categorie>Economic&amp;financiar</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>gratuita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>7500</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>7500</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Business Magazin</nume>
+         <editor>Mediafax Group</editor>
+         <categorie>Economic&amp;financiar</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>3057</tiraj_brut>
+            <total_vanzari>2551</total_vanzari>
+            <total_difuzat>2826</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Capital</nume>
+         <editor>Editura Evenimentul si Capital</editor>
+         <categorie>Economic&amp;financiar</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>6488</tiraj_brut>
+            <total_vanzari>3807</total_vanzari>
+            <total_difuzat>4042</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Casa Lux</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Home&amp;Deco</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>7667</tiraj_brut>
+            <total_vanzari>2694</total_vanzari>
+            <total_difuzat>2979</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Casa mea</nume>
+         <editor>Delta Media Publishers</editor>
+         <categorie>Home&amp;Deco</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>8000</tiraj_brut>
+            <total_vanzari>2848</total_vanzari>
+            <total_difuzat>3068</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Casa si gradina</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Home&amp;Deco</categorie>
+         <periodicitate>6 aparitii pe an</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>6000</tiraj_brut>
+            <total_vanzari>2467</total_vanzari>
+            <total_difuzat>2798</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Catavencii</nume>
+         <editor>Patetic Media</editor>
+         <categorie>Satira - Umor</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>14000</tiraj_brut>
+            <total_vanzari>8067</total_vanzari>
+            <total_difuzat>8279</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Click</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Cotidian Popular</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>96201</tiraj_brut>
+            <total_vanzari>75694</total_vanzari>
+            <total_difuzat>75957</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.5</pret_simplu>
+            <pret_addon>11.5</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Click! de Duminica</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Publicatii de sfarsit de saptamana</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>53760</tiraj_brut>
+            <total_vanzari>43882</total_vanzari>
+            <total_difuzat>44143</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.3</pret_simplu>
+            <pret_addon>11.3</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Click! Ghid TV</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Ghid TV</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>gratuita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>183820</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>142140</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Click! pentru femei</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Femei</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>39062</tiraj_brut>
+            <total_vanzari>24917</total_vanzari>
+            <total_difuzat>25124</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.4</pret_simplu>
+            <pret_addon>11.4</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Click pofta buna!</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Culinar</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>53200</tiraj_brut>
+            <total_vanzari>34657</total_vanzari>
+            <total_difuzat>34849</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1</pret_simplu>
+            <pret_addon>11</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Click SANATATE</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Sanatate &amp; ingrijire personala</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>32500</tiraj_brut>
+            <total_vanzari>22007</total_vanzari>
+            <total_difuzat>22201</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.1</pret_simplu>
+            <pret_addon>11.1</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Cosmopolitan</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>15667</tiraj_brut>
+            <total_vanzari>6041</total_vanzari>
+            <total_difuzat>6513</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Crisana</nume>
+         <editor>Anotimp Casa de Presa si Editura</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>6109</tiraj_brut>
+            <total_vanzari>4677</total_vanzari>
+            <total_difuzat>5471</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Debizz</nume>
+         <editor>Debizz Magazine</editor>
+         <categorie>Business Lifestyle</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>gratuita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>3500</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>3500</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Dilema Veche</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Cultura, arta si istorie</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>9165</tiraj_brut>
+            <total_vanzari>5266</total_vanzari>
+            <total_difuzat>5528</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Draga mea pentru copii</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Reviste pentru copii</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>8000</tiraj_brut>
+            <total_vanzari>3150</total_vanzari>
+            <total_difuzat>3310</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>ELLE</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>19667</tiraj_brut>
+            <total_vanzari>8119</total_vanzari>
+            <total_difuzat>8839</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Evenimentul Zilei</nume>
+         <editor>Editura Evenimentul si Capital</editor>
+         <categorie>Cotidian generalist national</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>15280</tiraj_brut>
+            <total_vanzari>9676</total_vanzari>
+            <total_difuzat>9887</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Femeia</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>9000</tiraj_brut>
+            <total_vanzari>3679</total_vanzari>
+            <total_difuzat>3903</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Femeia de azi</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Femei</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>47258</tiraj_brut>
+            <total_vanzari>23755</total_vanzari>
+            <total_difuzat>23947</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.4</pret_simplu>
+            <pret_addon>11.4</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Forbes Romania</nume>
+         <editor>BP Publishing Media</editor>
+         <categorie>Business Lifestyle</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>8000</tiraj_brut>
+            <total_vanzari>6182</total_vanzari>
+            <total_difuzat>6379</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Gazeta de Sud</nume>
+         <editor>Media Sud Europa</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Regional</arie>
+         <cifre>
+            <tiraj_brut>9147</tiraj_brut>
+            <total_vanzari>8262</total_vanzari>
+            <total_difuzat>8439</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Gazeta Sporturilor</nume>
+         <editor>Convergent Media</editor>
+         <categorie>Sport</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>25057</tiraj_brut>
+            <total_vanzari>17059</total_vanzari>
+            <total_difuzat>17429</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>2</pret_simplu>
+            <pret_addon>12</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Gazeta Sporturilor de Duminica</nume>
+         <editor>Convergent Media</editor>
+         <categorie>Sport</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>9690</tiraj_brut>
+            <total_vanzari>5954</total_vanzari>
+            <total_difuzat>6060</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Gigantica</nume>
+         <editor>Editura Maxim Concept</editor>
+         <categorie>Divertisment, Integrame, Rebus si Jocuri</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>12000</tiraj_brut>
+            <total_vanzari>8263</total_vanzari>
+            <total_difuzat>8277</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Glamour</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>15361</tiraj_brut>
+            <total_vanzari>6660</total_vanzari>
+            <total_difuzat>7388</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Gradina mea de vis</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Home&amp;Deco</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>15000</tiraj_brut>
+            <total_vanzari>7274</total_vanzari>
+            <total_difuzat>7469</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Harper`s Bazaar</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>11000</tiraj_brut>
+            <total_vanzari>3781</total_vanzari>
+            <total_difuzat>4129</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Historia</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Cultura, arta si istorie</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>17117</tiraj_brut>
+            <total_vanzari>9963</total_vanzari>
+            <total_difuzat>10261</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Insight Tarom</nume>
+         <editor>Delta Media Publishers</editor>
+         <categorie>B2B</categorie>
+         <periodicitate>6 aparitii pe an</periodicitate>
+         <tip>gratuita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>20000</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>20000</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Ioana</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>14492</tiraj_brut>
+            <total_vanzari>5849</total_vanzari>
+            <total_difuzat>6034</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Jurnal Aradean</nume>
+         <editor>Russmedia Newspaper</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>12648</tiraj_brut>
+            <total_vanzari>12349</total_vanzari>
+            <total_difuzat>12584</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Jurnal Bihorean</nume>
+         <editor>Russmedia Newspaper</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>6680</tiraj_brut>
+            <total_vanzari>5948</total_vanzari>
+            <total_difuzat>6307</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Jurnalul</nume>
+         <editor>Antena 3</editor>
+         <categorie>Cotidian generalist national</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>7101</tiraj_brut>
+            <total_vanzari>3187</total_vanzari>
+            <total_difuzat>3378</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Kaufland</nume>
+         <editor>Kaufland Romania SCS</editor>
+         <categorie>Autopromovare cu continut generalist</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>gratuita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>4790377</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>4790377</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Libertatea</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Cotidian Popular</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>59112</tiraj_brut>
+            <total_vanzari>41131</total_vanzari>
+            <total_difuzat>41382</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1</pret_simplu>
+            <pret_addon>11</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Libertatea - Editia de duminica</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Publicatii de sfarsit de saptamana</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>33413</tiraj_brut>
+            <total_vanzari>25695</total_vanzari>
+            <total_difuzat>25885</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1</pret_simplu>
+            <pret_addon>11</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Libertatea pentru femei</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Femei</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>59034</tiraj_brut>
+            <total_vanzari>36635</total_vanzari>
+            <total_difuzat>36969</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1</pret_simplu>
+            <pret_addon>11</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Libertatea pentru femei - Retete</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Culinar</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>30167</tiraj_brut>
+            <total_vanzari>17321</total_vanzari>
+            <total_difuzat>17712</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>0.9</pret_simplu>
+            <pret_addon>10.9</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Libertatea - Supliment Weekend</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Ghid TV</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>gratuita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>105300</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>70128</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Lumina de duminica</nume>
+         <editor>Patriarhia Romana - Ziarul Lumina</editor>
+         <categorie>Spiritualitate</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>22199</tiraj_brut>
+            <total_vanzari>21623</total_vanzari>
+            <total_difuzat>22098</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.4</pret_simplu>
+            <pret_addon>11.4</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Magazin Umoristic</nume>
+         <editor>Editura Maxim Concept</editor>
+         <categorie>Divertisment, Integrame, Rebus si Jocuri</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>15500</tiraj_brut>
+            <total_vanzari>10820</total_vanzari>
+            <total_difuzat>10836</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Mami</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Cresterea si educarea copiilor</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>4000</tiraj_brut>
+            <total_vanzari>986</total_vanzari>
+            <total_difuzat>1233</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Marie Claire</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>10000</tiraj_brut>
+            <total_vanzari>3743</total_vanzari>
+            <total_difuzat>4397</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Men`s Health</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Lifestyle masculin</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>9000</tiraj_brut>
+            <total_vanzari>3220</total_vanzari>
+            <total_difuzat>3571</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Monitorul de Botosani</nume>
+         <editor>MediaPress - Botosani</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>4154</tiraj_brut>
+            <total_vanzari>3958</total_vanzari>
+            <total_difuzat>3958</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Monitorul de Suceava</nume>
+         <editor>Interpress Suceava</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>6929</tiraj_brut>
+            <total_vanzari>6573</total_vanzari>
+            <total_difuzat>6598</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Monitorul Expres</nume>
+         <editor>Monitorul Expres</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>1475</tiraj_brut>
+            <total_vanzari>691</total_vanzari>
+            <total_difuzat>1367</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>National Geographic</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Cultura generala</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>11000</tiraj_brut>
+            <total_vanzari>6932</total_vanzari>
+            <total_difuzat>7163</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>National Geographic Traveler</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Turism &amp; vacante</categorie>
+         <periodicitate>Trimestrial</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>12000</tiraj_brut>
+            <total_vanzari>8084</total_vanzari>
+            <total_difuzat>8304</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Obiectiv Vocea Brailei</nume>
+         <editor>Double P Media</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>2526</tiraj_brut>
+            <total_vanzari>1919</total_vanzari>
+            <total_difuzat>1919</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>OK! Romania</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Vedete si celebritati</categorie>
+         <periodicitate>Bilunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>18033</tiraj_brut>
+            <total_vanzari>10879</total_vanzari>
+            <total_difuzat>11154</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Pap Tot!</nume>
+         <editor>BP Publishing Media</editor>
+         <categorie>Cresterea si educarea copiilor</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>10000</tiraj_brut>
+            <total_vanzari>4805</total_vanzari>
+            <total_difuzat>5405</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Practic Carticica Practica</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Culinar</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>27000</tiraj_brut>
+            <total_vanzari>9816</total_vanzari>
+            <total_difuzat>10005</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Practic - Idei pentru casa, gradina si apartament</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Home&amp;Deco</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>16667</tiraj_brut>
+            <total_vanzari>7814</total_vanzari>
+            <total_difuzat>8032</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Practic in bucatarie</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Culinar</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>86667</tiraj_brut>
+            <total_vanzari>50307</total_vanzari>
+            <total_difuzat>50539</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.6</pret_simplu>
+            <pret_addon>11.6</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Psychologies</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>13633</tiraj_brut>
+            <total_vanzari>6693</total_vanzari>
+            <total_difuzat>7097</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Realitatea Media</nume>
+         <editor>Realitatea Media</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>2098</tiraj_brut>
+            <total_vanzari>1740</total_vanzari>
+            <total_difuzat>1827</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Romania Libera</nume>
+         <editor>Eta Media Publishers</editor>
+         <categorie>Cotidian generalist national</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>15209</tiraj_brut>
+            <total_vanzari>10083</total_vanzari>
+            <total_difuzat>11227</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Sanatatea de azi</nume>
+         <editor>Burda Romania</editor>
+         <categorie>Sanatate &amp; ingrijire personala</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>30000</tiraj_brut>
+            <total_vanzari>16349</total_vanzari>
+            <total_difuzat>16513</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.6</pret_simplu>
+            <pret_addon>11.6</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Sapte seri</nume>
+         <editor>Media Men Communication</editor>
+         <categorie>Ghid de timp liber si life style</categorie>
+         <periodicitate>Bilunar</periodicitate>
+         <tip>gratuita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>10167</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>10167</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Sibiu 100%</nume>
+         <editor>Son Management</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>gratuita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>70000</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>70000</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Sky Lady</nume>
+         <editor>Delta Media Publishers</editor>
+         <categorie>B2B</categorie>
+         <periodicitate>Trimestrial</periodicitate>
+         <tip>gratuita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>0</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>0</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Surprize</nume>
+         <editor>Editura Maxim Concept</editor>
+         <categorie>Divertisment, Integrame, Rebus si Jocuri</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>12000</tiraj_brut>
+            <total_vanzari>8415</total_vanzari>
+            <total_difuzat>8431</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Tribuna</nume>
+         <editor>Casa de Presa si Editura Tribuna</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>8385</tiraj_brut>
+            <total_vanzari>8291</total_vanzari>
+            <total_difuzat>8334</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>TV Satelit</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Ghid TV</categorie>
+         <periodicitate>Bilunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>44433</tiraj_brut>
+            <total_vanzari>31605</total_vanzari>
+            <total_difuzat>31950</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.7</pret_simplu>
+            <pret_addon>11.7</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>TVMania</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Ghid TV</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>58012</tiraj_brut>
+            <total_vanzari>40032</total_vanzari>
+            <total_difuzat>40385</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.6</pret_simplu>
+            <pret_addon>11.6</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Unica</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>15253</tiraj_brut>
+            <total_vanzari>7238</total_vanzari>
+            <total_difuzat>7718</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Viata Libera</nume>
+         <editor>Trustul de presa Dunarea de Jos</editor>
+         <categorie>Cotidian sau saptamanal generalist, local sau regional</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>Local</arie>
+         <cifre>
+            <tiraj_brut>4702</tiraj_brut>
+            <total_vanzari>4032</total_vanzari>
+            <total_difuzat>4127</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Viva</nume>
+         <editor>Ringier Romania</editor>
+         <categorie>Vedete si celebritati</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>17333</tiraj_brut>
+            <total_vanzari>7575</total_vanzari>
+            <total_difuzat>8336</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Weekend Adevarul</nume>
+         <editor>Adevarul Holding</editor>
+         <categorie>Publicatii de sfarsit de saptamana</categorie>
+         <periodicitate>Saptamanal</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>18127</tiraj_brut>
+            <total_vanzari>12303</total_vanzari>
+            <total_difuzat>12577</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Weekend Magazin</nume>
+         <editor>Editura Maxim Concept</editor>
+         <categorie>Divertisment, Integrame, Rebus si Jocuri</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>14333</tiraj_brut>
+            <total_vanzari>8442</total_vanzari>
+            <total_difuzat>8452</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Ziarul Financiar</nume>
+         <editor>Mediafax Group</editor>
+         <categorie>Economic&amp;financiar</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>3945</tiraj_brut>
+            <total_vanzari>3213</total_vanzari>
+            <total_difuzat>3520</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Ziarul Lumina</nume>
+         <editor>Patriarhia Romana - Ziarul Lumina</editor>
+         <categorie>Spiritualitate</categorie>
+         <periodicitate>Cotidian</periodicitate>
+         <tip>platita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>22382</tiraj_brut>
+            <total_vanzari>21756</total_vanzari>
+            <total_difuzat>22337</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+            <pret_simplu>1.5</pret_simplu>
+            <pret_addon>11.5</pret_addon>
+         </cifre>
+      </publicatie>
+      <publicatie>
+         <nume>Zoot</nume>
+         <editor>Zoot</editor>
+         <categorie>Femei (Glossy)</categorie>
+         <periodicitate>Lunar</periodicitate>
+         <tip>gratuita</tip>
+         <arie>National</arie>
+         <cifre>
+            <tiraj_brut>8334</tiraj_brut>
+            <total_vanzari>0</total_vanzari>
+            <total_difuzat>8333</total_difuzat>
+            <sursa>decl. difuzare</sursa>
+         </cifre>
+      </publicatie>
+   </publicatii>
+</cifre-difuzare>
+

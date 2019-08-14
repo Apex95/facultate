@@ -1,0 +1,29 @@
+// 100p
+
+Dan Sporici
+
+== README ==
+
+    Se citesc datele din fisier... daca se cere modul 1 de functionare
+este creat si arborele in timpul citirii, altfel acesta urmeaza sa fie creat
+prin adaugarea succesiva de drepte/frunze (applyLine).
+
+    Fiecare nod din arbore retine indicele dreptei sau punctului,
+si un intreg prin care se specifica tipul (dreapta sau punct). Nodurile
+si dreptele sunt retinute in vectori separati, alocati dinamic.
+
+    Functia applyLine adauga o dreapta in arborele dat stabilind initial
+pozitia acesteia (daca trebuie sa partitioneze planul din stanga sau pe cel din 
+dreapta). Asta se realizeaza comparand valorile lui Y (pt cele 2 drepte) 
+atunci cand X = 0; considerand ca nu sunt paralele cu OX, linia cu un Y 
+mai mare se afla in partea dreapta daca are panta negativa sau in stanga
+daca are panta pozitiva. 
+    
+    In momentul in care arborele a fost creat, se adauga frunze (addLeaves) 
+pentru fiecare nod ce reprezinta o dreapta, iar mai apoi se completeaza cu 
+indicii punctelor ce respecta ecuatiile planelor (setLeafIndex).
+
+    La final se determina indicii ceruti pentru fiecare dintre cele Q puncte
+(getLeafIndex) si se afiseaza datele cerute.
+
+ 

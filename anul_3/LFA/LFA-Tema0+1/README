@@ -1,0 +1,28 @@
+// 100p
+
+Nume: SPORICI Dan-Cristian
+Grupa: CB335
+
+Lexer: Asemenea unui automat pe stari care executa citiri caracter cu caracter;
+Porneste dintr-o stare (READ_SET_SEPARATOR) ce citeste acoladele de inceput si
+virgulele ce despart multimile gramaticii. Dupa citirea unui caracter '{' se
+incearca trecerea in READ_SYMBOLS, care se ocupa de citirea simbolurilor
+multimii V; se face trecerea alternativ dintr-o stare in alta la citirea
+fiecarui caracter iar cand se gaseste o '}' se trece in starea NEXT_SET
+care are rolul de a tine evidenta multimii citite si face tranzitia catre
+grupul de stari corespunzatoare. Similar pt celelalte multimi. Citind char cu 
+char stiu pt fiecare stare ce caracter ar trebui sa fie la intrare, deci in 
+momentul in care se va face match pe ultima expresie regulata ('.') atunci 
+exista o eroare de sintaxa. Consider sintaxa corecta daca am ajuns intr-o stare
+finala, nu mai sunt caractere de citit (exceptand ' ') si exista simboluri.
+Rezultatele se preiau din lexer prin intermediul unor functii ce returneaza
+obiecte in care retin simbolurile citite in niste hashset-uri.
+Program: verificarea semantica se face aplicand regulile de definitie ale 
+gramaticii; pt cerinte: pornesc de la reguli de forma "neterminal -> terminali"
+si marchez daca neterminalul e util sau daca duce spre sirul vid. Pe urma 
+continui cu reguli "neterminal -> terminali" cat timp au loc noi marcari.
+
+
+
+
+ 

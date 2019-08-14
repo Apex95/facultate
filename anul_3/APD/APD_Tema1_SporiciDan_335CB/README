@@ -1,0 +1,32 @@
+// 100p
+
+Dan Sporici
+
+1.Implementarea seriala
+
+Aloc dinamic 2 matrice identice ('data' si 'newData') cu dimensiunile cerute + spatiul pt bordare, fiecare reprezentand starea celulelor la iteratia curenta si la cea urmatoare.
+
+Dupa bordare aplic de N ori (N = nr de iteratii) functia runEpoch() ce reprezinta o iteratie completa - se verifica starea celulelor din matricea 'data' si se scrie starea lor in 'newData'. Dupa o iteratie completa vine un apel al functiei copyData() cu scopul de a copia matricea noua peste cea veche.
+
+Raman cateva free-uri + scrierea in fisierul de iesire.
+
+
+2.Paralelizare
+
+Pornind de la versiunea seriala, am considerat ca se pot paraleliza: cele (rows+2) alocari de memorie pt ambele matrice si procedurile runEpoch() si copyData(). N-am incercat sa paralelizez si citirea.
+
+Prin urmare, am adaugat un '#pragma omp parallel' in care am tinut private variabilele 'i' si 'j' (altfel risc sa fie modificate din alte threaduri si obtin deadlock-uri la bariera). 
+Am adaugat un 'for' paralelizat (partea de alocare) iar la finalul acestuia o bariera astfel incat sa aliniez toate threadurile. Partea de citire ramane sa se execute doar in cadrul threadului principal (master) in mod secvential. Inca o bariera dupa citire astfel incat celelalte threaduri sa nu inceapa rularea iteratiilor in timp ce inca are loc citirea datelor din fisier. Atat executarea unei iteratii cat si copierea unei matrice implica o parcurgere integrala => se pot paraleliza cu for collapse(2). Copierea matricelor si executarea unei iteratii sunt despartite iar de 2 bariere astfel incat sa nu aiba loc ambele operatii simultan, pe threaduri diferite.
+
+Testarea e facuta pe coada nehalem.
+
+
+
+
+
+
+
+
+
+
+

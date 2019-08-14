@@ -1,0 +1,18 @@
+// 100p + 44p
+
+// Dan Sporici
+
+Evaluarea sub forma de TDA:
+
+	Am parcurs arborele primit, evalauand fiecare operatie in parte utilizand pattern matching. Exista 2 functii mari de evaluare: evalAdt si evalExp, pt programe respectiv expresii. Evaluarea de expresii intoarce mereu fie String (pt eroare) fie Int (rezultat). In cazul in care o variabila este folosita fara initializare, eroarea se propaga de la evalExp(Symbol) (string-ul nefiind gasit in dictionarul (variabila,valoare)) catre radacina (deci la fiecare evaluarea de expresie verific sa lucrez cu int-uri). Evaluarea pentru programe e similara cu cea pt expresii, doar ca intoarce un triplet (a,b,c) in care:
+	a = rezultatul (sau eroare)
+	b = dictionarul cu valorile variabilelor
+	c = daca am gasit(1) sau nu(0) un return
+
+
+Parsarea datelor raw:
+	Initial aplic o functie de filtrare asupra textului - inlatur spatiile si '\n'.
+	Fiecare functie de parsare intoarce eroarea incadrata intr-un Left sau rezultatul intr-un Right. Am luat 2 parsere mari (pt programe si pt expresii) care la randul lor apeleaza parsere specifice, in functie de codul intalnit. Practic, o bucata din codul raw e trecuta prin aproape orice parser specific si care din ele returneaza Right, inseamna ca e un parser corect (un fel de pattern matching, numai cu stringuri). La revenirea din apelul recursiv se continua cu restul codului. Similar si pt expresii.
+	Pentru implementarea If / While am folosit mai multe functii care actioneaza ca niste "stari"; de ex pt ifParser: o prima functie preia si evalueaza conditia, daca este Right, trimite rezultatul la a 2-a ce evalueaza codul pt True, daca si asta e Right se trimit toate datele la a 3-a ce parseaza ramura Else => daca se ajunge aici si programul din else e Right => se intoarce adt If. Caz special: intre If-uri si While-uri nu exista operator de secventiere (;) asa ca in ultima functie verific daca dupa '}' mai am caractere (daca nu cumva am primit un If care se mai continua cu altceva). Daca mai exista caractere => mai urmeaza o instructiune, voi intoarce Seq (If) (Orice_mai_venea_dupa), apeland iar programul principal.
+
+

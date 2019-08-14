@@ -1,0 +1,187 @@
+html, body
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#room-wrapper
+{
+    width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+#room-background
+{
+    background-image: url("imgs/room.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    
+    width: 100%;
+    padding-bottom: 62.5%;
+    position: relative;
+}
+
+div.tv-screen
+{
+    position: absolute;
+    top: 35.2%;
+    left: 37.9%;
+    width: 11.4%;
+    height: 10.5%;
+    
+}
+
+a.tv-nav
+{
+    position: absolute;
+    font-size: 6.0vw;
+    text-decoration: none;
+    
+    color: #00bfff;
+    
+    text-shadow: 0px 0px 7px #00bfff;
+}
+
+#tv-nav-prev
+{
+    top: 31%;
+    left: 27%;
+}
+
+#tv-nav-next
+{
+    top: 31%;
+    left: 57%;
+}
+
+
+#tvchannel0
+{
+    background-image: url("imgs/clouds.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    display: initial;
+    
+    text-shadow: 0px 0px 2px #FFF;
+}
+
+#tvchannel1
+{
+    display: none;
+}
+
+#tvchannel2
+{
+    background-image: url("imgs/screensaver.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    
+    display: none;
+}
+
+#regionName
+{
+    color: darkred;
+}
+
+#weatherInfo
+{
+    font-size: 0.9vw;
+}
+
+
+#light-switch
+{
+    background-image: url("imgs/light_switch.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    
+    width: 6%;
+    height: 6%;
+    
+
+    
+    transform: perspective(500px) rotateY(-40deg);
+}
+
+div.light-source
+{
+    position: absolute;
+    width: 6.7%;
+    height: 5.7%;
+
+    opacity: 0.8;
+    display: none;
+    
+    box-shadow: 0px 0px 300px 90px yellow,
+                0px 0px 20px 10px yellow,
+                inset 0px 0px 100px 40px yellow;
+}
+
+#ls1
+{
+    top: 34.5%;
+    left: 6.2%;
+}
+
+#ls2
+{
+    top: 34.5%;
+    left: 72.3%;
+}
+
+#aq-info
+{
+    opacity: 0.6;
+    
+    position: absolute;
+    color: #000;
+    text-shadow: 0px 0px 4px green;
+    
+    top: 68%;
+    left: 80%;
+    
+    transform: perspective(600px) rotateY(-45deg) rotateZ(6deg) rotateX(30deg);
+    background: #999;
+    
+    
+    border: 1px dashed #222;
+    
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+#ip-info
+{
+    position: absolute;
+    top: 21%;
+    left: 52%;
+    
+    font-size: 1vw;
+    color: #FFF;
+    padding: 3px;
+    background-color: #2b2b29;
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 1px;
+    
+    text-shadow: 0px 0px 2px darkred;
+}
+
+#ip-address
+{
+    
+    color: lightblue;
+}
+
+

@@ -1,0 +1,17 @@
+Problema 1:
+
+Algoritmul lui Kruskal clasic - iau muchia de cost minim care nu formeaza ciclu, caut radacinile celor 2 noduri componente si fac union pe cele 2. In plus, am adaugat partea de "path compression" - pt a reduce distanta dintre nod si radacina acestuia.
+
+In cazul in care mi se cere sa includ o anumita muchie, o adaug intai pe aceasta in componenta arborelui iar pe urma incep cu extragerea muchiilor de cost minim.
+
+Am tinut cont doar de faptul ca o anumita muchie poate fi ceruta de mai multe ori - si am pastrat costul obtinut cand se cerea includerea acelei muchii, ca sa nu calculez din nou.
+
+Problema 2:
+
+Implementare mai ciudata probabil; la citire am memorat aparitiile fiecarui nod iar la orientarea muchiilor am ales astfel:
+	- daca un nod are o singura aparitie si input degree = 0 => trebuie sa trag o muchie spre el altfel nu mai am cum sa ajung acolo
+	- daca un nod are input degree != 0 si celalalt are input degree == 0, atunci duc muchia spre cel care are input degree == 0.
+	- altfel...duc muchie spre cel cu input degree mai mic
+	- daca au acelasi input degree, trebuie sa decid orientarea muchiei in functie de alte proprietati...lucru pe care n-am apucat sa-l mai fac, asa ca am trecut muchia spre cel de-al 2-lea nod...
+
+Folosesc un DFs si plec (preferabil) de pe nodul cu o singura aparitie, iar de aici incerc sa construiesc graful. Continui constructia incercand fiecare nod.

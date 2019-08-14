@@ -1,0 +1,51 @@
+// 100p
+
+Dan Sporici
+
+-- Setare handler pt SIGSEGV --
+
+Initial salvez handler-ul original (pe care-l restaurez la cleanup) si
+setez ca exception handler functia scrisa de mine.
+
+
+-- Implementare handler --
+
+Are la baza un array de elemente tip vm_mapinfo_t, in care se retin
+map-ul dat in vm_alloc() alaturi de numarul de cadre si de pagini.
+
+La fiecare alocare se adauga un "configuratia" in array-ul respectiv.
+In acel moment fiecare pagina alocata are PROTECTION_NONE si 
+LOCATION_NONE (deci nemapata).
+
+Atunci cand se genereaza o exceptie se cauta intai prin lista map-ul
+ce include acea adresa (adresa care a generat exceptia sa se afle 
+in intervalul map->start si map->start + num_pages * page_size).
+Ulterior se determina indicele paginii ce contine acea adresa.
+
+-- Flaguri de protectie --
+
+Avand indicele paginii se verifica nivelul de protectie (prot_levels[i])
+si se fac modificarile de la none->read sau din read->read+write (moment
+in care o marchez ca fiind pagina dirty).
+
+-- Mapare in RAM --
+
+Se incearca aducerea paginii care a generat exceptia in RAM, cautand
+initial un indice pt un cadru in care se poate face maparea.
+
+In cazul in care nu exista este necesar un swap out, prin urmare
+se cauta un alt indice pt o zona din swap in care se va muta prima pagina
+din RAM. Copierea datelor in fisierul de swap se face doar daca pagina e
+dirty sau n-a fost evacuata. Copierea se face scriind pur si simplu
+in fisierul de swap la offsetul page_size * indice_swap si ulterior
+mapand partea respectiva din fisier.
+
+Maparea propriu-zisa in RAM se face efectuand un al 2-lea mmap peste
+adresa paginii curente insa de aceasta data se include si handler-ul catre
+fisierul de RAM, cu offsetul corespunzator. Dupa maparea partii din fisierul
+RAM peste adresa data se seteaza temporar privilegii de read+write pt a
+initializa tot cu 0 iar pe urma se revine la protection_none.
+
+
+
+

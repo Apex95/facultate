@@ -1,0 +1,9 @@
+C:\Users\Apex\Desktop\ioc-tema2\BuyMe\BuyMe\bin\Release\BuyMe.exe.config
+C:\Users\Apex\Desktop\ioc-tema2\BuyMe\BuyMe\bin\Release\BuyMe.exe
+C:\Users\Apex\Desktop\ioc-tema2\BuyMe\BuyMe\bin\Release\BuyMe.pdb
+C:\Users\Apex\Desktop\ioc-tema2\BuyMe\BuyMe\obj\Release\BuyMe.csprojResolveAssemblyReference.cache
+C:\Users\Apex\Desktop\ioc-tema2\BuyMe\BuyMe\obj\Release\BuyMe.MainWnd.resources
+C:\Users\Apex\Desktop\ioc-tema2\BuyMe\BuyMe\obj\Release\BuyMe.Properties.Resources.resources
+C:\Users\Apex\Desktop\ioc-tema2\BuyMe\BuyMe\obj\Release\BuyMe.csproj.GenerateResource.Cache
+C:\Users\Apex\Desktop\ioc-tema2\BuyMe\BuyMe\obj\Release\BuyMe.exe
+C:\Users\Apex\Desktop\ioc-tema2\BuyMe\BuyMe\obj\Release\BuyMe.pdb

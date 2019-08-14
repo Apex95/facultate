@@ -1,0 +1,110 @@
+// 100p
+
+// Sporici Dan - 335CB
+
+Tema are la baza structura THashTable ce contine:
+
+- o "matrice" de stringuri (nOfBuckets linii)
+- un vector in care retin cate locuri mai sunt libere intr-un 
+bucket (pe o linie) - bucketsCapacity
+- un vector in care retin cate elemente sunt intr-un bucket - bucketsElements
+- numarul total de bucketuri - nOfBuckets
+
+Interpretarea comenzilor are loc in functia parseInput() catre
+care trimit ca parametru, alaturi de pointerul catre structura
+anterior mentionata, si o variabila de tip FILE * ce pointeaza
+catre streamul din care se face citirea (stdin daca nu sunt date
+fisiere de intare, sau fisierul respectiv luat cu fopen() in caz contrar)
+Aceeasi metoda si pentru afisari.
+
+In rest, codul este destul de straight-forward: citeste o linie din
+stream, o imparte in cuvinte din care extrage comanda + parametri
+si executa functia ceruta.
+
+Linkarea pe Linux - varianta clasica.
+Linkarea pe Windows (cu dll-ul...): m-am uitat cu dumpbin prin hash.dll 
+si am scris un fisier .def cu functia exportata - din fisierul asta 
+generez un .lib
+
+
+parseInput():
+
+	- ia linie cu linie datele de la streamul de intrare si face o
+impartire dupa whitespace-uri astfel incat sa obtina numele functiei
+si parametrii.
+	- daca nu exista exceptii (comanda nevalida, parametri care lipesc,
+etc.) apeleaza functia specifica comenzii date
+	- totodata stabileste, in functie de comanda & parametru catre ce
+stream se face afisarea (pt printAll(), printBucket())
+
+
+
+extendBucket():
+
+	- apelata atunci cand diferenta dintre capacitatea bucketului
+respectiv si nr de elemente continute este 0 (aka: trebuie adaugat un cuvant
+si nu e loc)
+	- se aloca aproximativ dublul capacitatii anterioare (+1 ca sa tratez
+cazul in care bucketul are capacitate 0)
+
+
+
+addWord():
+
+	- verifica daca un cuvant nu e in bucket (cauta liniar in bucketul al carui
+id este dat de functia de hashing)
+	- verifica daca are suficient loc sa-l adauge (extendBucket() daca nu)
+	- aloca spatiu pentru cuvant in bucketul respectiv si-l copiaza acolo
+(indicele fiind dat de bucketsElements[bucketId])
+
+
+
+allocateHashTable():
+
+	- fiind dat un pointer catre o structura tip THashTable, aloca
+in heap spatiu pt toate campurile ce intra in componenta acesteia
+
+
+
+findWord():
+
+	- cauta cuvantul in vectorul (bucketul) al carui id e dat de functia de
+hash
+
+
+ 
+printBucket():
+
+	- ia fiecare cuvant din bucket (sunt bucketsElements[bucketId] cuvinte)
+si-l afiseaza
+
+
+
+printAll():
+
+	- apeleaza comanda de mai sus pt fiecare bucketId in parte
+
+
+removeWord():
+
+	- gaseste pozitia unui cuvant in bucketul corespunzator
+	- shifteaza toate cuvintele din "dreapta" acestuia cu o pozitie
+la stanga (suprascrie cuvantul ce trebuie sters)
+	- actualizeaza nr de cuvinte din bucket (bucketsElements[bucketId])
+
+
+
+clearAll():
+
+	- sterge toate bucketurile dintr-un hashtable
+
+
+
+resize():
+
+	- aloca un al 2-lea hashtable
+	- itereaza prin primul si adauga cuvintele in cel nou (recalculand hash-urile)
+	- free la toate campurile folosite de hashtable-ul original
+	- copiaza structura tabelului nou in locatia de memorie spre care indica
+pointerul vechiului hashtable	
+

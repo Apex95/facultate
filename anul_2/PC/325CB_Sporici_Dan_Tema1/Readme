@@ -1,0 +1,107 @@
+// 100p
+
+/* Sporici Dan - 325CB */
+
+-- Detalii Implementare --
+
+Am incercat sa implementez tema intr-un mod cat mai compact astfel incat sa am un singur
+set de functii care sa asigure pentru cele 4 moduri de comunicare. Astfel la lansare
+verific parametrii dati in linia de comanda si adaptez fiecare metoda pt modul cerut.
+
+Deoarece clientul trimite (si cere) exact acelasi set de mesaje pentru fiecare task,
+serverul poate fi scris ca o oglina a clientului. Astfel tema se imparte in 2 mari functii:
+
+handleIntro() - primeste / trimite toate mesajele cerute pana la etapa de joc
+handleGame() - trateaza partea de joc (trimis numere, primit mesaje) + cea de exit
+
+
+
+-- Task 1 / mod simplu --
+
+Daca parametrul din linia de comanda nu exista sau nu e ack / parity / hamming, se considera
+ca ruleaza taskul 1. Singura parsare necesara este cea a mesajelor primite in timpul jocului,
+cu scopul de a adapta numarul.
+
+-- Task 2 / mod ack --
+
+La fel ca la taskul 1, doar ca am mai adaugat o conditie care sa verifice daca serverul
+se afla in modul ack - daca da, trimite un mesaj "ack" dupa ce primeste date de la client; 
+totodata asteapta eventuale "ack"-uri dupa fiecare mesaj trimis catre client.
+
+-- Task 3 / mod parity --
+
+Modul anterior + adaugarea octetului de paritate. Inainte de a trimite un mesaj catre client
+apelez o functie (adaptPayloadForParity) care adauga la inceputul buffer-ului un octet de
+paritate; ca sa pot face procedura de trimitere mai comoda, adaug la octetul ce retine
+paritatea, valoarea 48 ('0') si trimit sub forma de caracter. La verificare, scad acel caracter.
+
+Stiind deja modul de functionare al clientul am considerat ca este necesar sa primesc corect doar mesajele ce tin strict de joc (bigger / smaller / success). Pentru acestea verific
+pariteatea la primire (isValidParity()), daca nu corespunde trimit "nack" si astept
+mesaje pana cand primesc versiunea "clean" - atunci pot actualiza numarul.
+
+Din ce am observat, clientul pare sa mai trimita niste caractere pe langa mesajul original
+(lungimea payloadului la trimitere pare sa fie mai mare decat dimensiunea stringului). Aparent
+la calculul / verificarea paritatii trebuie incluse si caracterele suplimentare.
+
+Alta obs: mesajele de la server la client nu par sa fie vreodata corupte; clientul trimite "nack"
+doar daca paritatea trimisa cu mesajul e calculata gresit, dar mesajul primit e mereu cel original.
+
+-- Task 4 / mod hamming --
+
+Taskul 2, cu 2 functii suplimentare ce fac partea de encoding / decoding pentru modul Hamming, folosind
+metoda din enuntul temei.
+
+O problema intampinata la partea de encoding a fost la trimiterea numerelor: in cazul in care pentru
+un numar de 3 cifre (3 octeti) trimit fix codificarea hamming (6 octeti) mi se spune ca nu e numar, 
+prin urmare trebuie adaugat un sufix de forma \0\0 (2 octeti null terminator). Pentru mesaje nu era
+necesara sufixarea.
+
+La decoding, partea de joc cel putin, se trimit mesajele in payload de lungime 18 sau 20 de octeti
+=> si aici se trimit niste caractere in plus fata de mesajul original. Le decodific pe toate cu hamming
+iar in stringul rezultat se regaseste mesajul + un sufix.
+
+
+-- Despre client --
+
+Dupa ce stabileste conexiunea la server, trimite aceleasi mesaje, dar cu codificarea specifica 
+fiecarui task (si eventuale ack/nack). La partea de joc, alege un numar (random?).
+
+(ack/nack nu sunt codificate).
+
+Client: "Hello. I am your homework and I want us to play a game. Send me back the word Hello then listen for more messages."
+
+// raspund cu "Hello" si citesc urmatoarele 3 mesaje
+
+Client: "Yey, you seem to be able to follow my orders, now I will send you 2 more messages."
+
+Client: "This is the first message."
+
+Client: "This is the second. Send me the word YEY in a message and the word OK in another. After that listen for more of my orders."
+
+// raspund cu 2 mesaje si la final astept urmatoarea instructiune
+
+//-- pana aici, corectitudinea mesajelor nu e relevanta pentru rezolvarea task-ului
+
+Client: "Time to play that game. I choose a random number and you have to guess it. Fun no? The number is between [0, 1000). You have 10 tries to guess it. Every time you send me a number I will send you the words bigger, smaller or success. If you find it I will send you one more message after success. Start guessing. Ohh and make sure the numbers are sent as strings and they contain only digits (not even backslash n or space) so I don't get confused."
+
+// pana nu ghicesc numarul...
+Client: "Bigger"
+//sau
+Client: "Smaller"
+
+
+// cand am ghicit
+Client: "Success"
+
+Client: "Good job and thanks for playing the game with me. Hope you had fun. Send me the word exit and just exit."
+
+// trimit "exit"
+
+Clientul trimite "PASS" spre stdout. (sau "FAIL").
+
+
+-- Cum am descoperit --
+
+Mult debugging, modificarea scriptului run_experiment.sh si diverse teste cu diferite procente
+de corupere.
+

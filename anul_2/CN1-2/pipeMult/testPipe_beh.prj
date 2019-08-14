@@ -1,0 +1,5 @@
+verilog work "pipeFin.v"
+verilog work "pipeDecomp.v"
+verilog work "pipeCalc.v"
+verilog work "testPipe.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

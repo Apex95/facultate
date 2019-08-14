@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="IDEA2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="keyshifterinv_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="main_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="round_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_main_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_main_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_main_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1483672868" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1483672868">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1483672868" xil_pn:in_ck="-3804700244525890290" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1483672868">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="keyshifter.v"/>
+      <outfile xil_pn:name="keyshifterinv.v"/>
+      <outfile xil_pn:name="main.v"/>
+      <outfile xil_pn:name="round.v"/>
+      <outfile xil_pn:name="test_main.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1483672868" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1480025127914721105" xil_pn:start_ts="1483672868">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1483672868" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7475052743703757761" xil_pn:start_ts="1483672868">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1483672868" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4302835119406984425" xil_pn:start_ts="1483672868">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1483672868" xil_pn:in_ck="-3804700244525890290" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1483672868">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="keyshifter.v"/>
+      <outfile xil_pn:name="keyshifterinv.v"/>
+      <outfile xil_pn:name="main.v"/>
+      <outfile xil_pn:name="round.v"/>
+      <outfile xil_pn:name="test_main.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1483672870" xil_pn:in_ck="-3804700244525890290" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3053743392421100430" xil_pn:start_ts="1483672868">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1483672653" xil_pn:in_ck="-4352370036208065459" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6060254214589484603" xil_pn:start_ts="1483672653">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="test_main_isim_beh.wdb"/>
+    </transform>
+  </transforms>
+
+</generated_project>

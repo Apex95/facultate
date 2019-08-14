@@ -1,0 +1,76 @@
+// 100p
+
+Sporici Dan / 335CB
+
+
+Stabilirea arborelui de acoperire:
+
+- programul incepe prin a trimite probe (canal 0) de la nodul initiator (rank 0) catre toti 
+vecinii; nodul parinte al unui descendent devine nodul de la care s-a primit primul mesaj tip "probe"; 
+in cazul in care exista o bucla in graf, 2 noduri isi trimit mesaje de "probe" dar ambele asteapta un
+mesaj de tip "echo" => mesajele de probe sunt citite si ignorate.
+
+- la final se trimite ecoul pe canalul 1, la care fiecare nod adauga muchia spre parinte; la primite
+se completeaza tree-ul cunoscut de nodul receptor cu tree-ul primit de la descendenti
+
+- pe urma nodul initiator trimite arborele obtinut catre celelalte noduri (sendTree()).
+
+* procedurile ce se ocupa de partea asta se gasesc in Graph.cpp
+
+
+
+Transmiterea + procesarea unei imagini:
+
+- fiecare nod preia linia corespunzatoare indicelui sau din arborele obtinut anterior (reprezentat cu liste
+de adiacenta), stabileste cati descendenti are (nodul initiator are atatia descendenti cate noduri adiacente,
+celelalte avand nr_adiacenti - 1).
+
+- trimiterea unei parti din poza (sendChunksToAdjacents()) se face folosind urmatorul protocol; 
+se trimit in ordine:
+	- crtCommand - comanda ce trebuie executata pe imagine
+	- offset - specifica pozitia (din imaginea bordata) la care se gaseste portiunea din imagine
+	- rowLength - lungimea unei linii
+	- nr_de_linii + 2 - ca sa includ cele 2 linii pt bordare
+	- <liniile propriu zise>
+
+- datele sunt citite in aceeasi ordine in procedura recvChunkFromParent()
+
+- aplicarea filtrelor de convolutie se face folosind procedura applyFilter() din filter.cpp;
+
+- rezultatul este trimis spre nodul parinte (sendChunkToParent()), fara primele 2 linii (redundante).
+
+* procedurile ce se ocupa de imagine in general se gasesc in Image.cpp - acestea se bazeaza pe cele
+implementate in Graph.cpp
+
+
+
+Statistica:
+
+- fiecare nod frunza aduna intr-o variabila nr_de_linii - 2, imediat dupa executia procedurii applyFilter()
+
+- atunci cand se primeste semnalul de oprire, fiecare nod frunza formeaza un vector de forma: 
+processedLines[rank] = nr_total_de_linii (celelalte spatii fiind automat completate cu 0).
+
+- vectorul respectiv este trimis catre nodul parinte - acesta va astepta mesaj de la fiecare descendent, va 
+face la randul lui merge si trimite mai departe spre radacina.
+
+- la final nodul initiator fie va primi vectorul complet fie il va obtine dupa inca un merge.
+
+
+Oprirea procesarii:
+
+- la inceput, dupa ce fiecare nod primeste arborele de acoperire, se seteaza o variabila locala _isAwake
+(folosind wakeUp()); aceasta indica faptul ca este necesara asteptarea unor mesaje ce tin de procesarea de
+imagini.
+
+- dupa fiecare imagine primita, nodul radacina trimite statusul sau (valoarea functiei _isAwake) catre
+descendenti; acestia actualizeaza starea in functie de valoarea primita si trimit mai departe.
+
+- atunci cand s-a ajuns la ultima poza ce trebuie trimisa, nodul radacina seteaza _isAwake = 0 (goSleep())
+iar aceasta se va propaga spre toate celelatle noduri - oprind astfel bucla in care se citesc mesajele si
+declansand partea de trimitere a nr de linii (statistica).
+
+
+
+
+
